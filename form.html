@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page 2</title>
+    <link rel="stylesheet" href="style.css">
+    <form onsubmit="kirimData(event)"></form>
+
+</head>
+
+<body>
+    <h1>Page 2</h1>
+    <div class="container">
+        <div class="form-container">
+            <form>
+                <div>
+                    <label for="nama">Username</label>
+                    <input type="text" name="nama" id="nama" required>
+                </div>
+
+                <div>
+                    <label for="date">Tanggal</label>
+                    <input type="date" id="start" name="trip-start" value="2023-06-11" min="2018-01-01"
+                        max="2023-12-31">
+                </div>
+
+                <div>
+                    <label for="genre">one piece</label>
+                    <select name="genre" id="genre" required>
+                        <option value="">Pilih Genre</option>
+                        <option value="luffy">luffy</option>
+                        <option value="zoro">zoro</option>
+                        <option value="nime">nime</option>
+                    </select>
+                </div>
+
+                <fieldset name="luffy" id="luffy">
+                    <legend>Pilih karakter:</legend>
+                    <div>
+                        <input type="checkbox" name="luffy" id="luffy" value="luffy">
+                        <label for="luffy">luffy</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="nime" id="nime" value="nime">
+                        <label for="nime">nime</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="zoro" id="zoro" value="onepiece">
+                        <label for="zoro">zoro</label>
+                    </div>
+                </fieldset>
+
+
+                <div>
+                    <label>Masukan untuk karakter ini</label><br>
+                    <textarea placeholder="Tulis disini"></textarea><br><br>
+                </div>
+
+                <div>
+                    <label for="message">Masukan karakter lainnya</label>
+                    <textarea name="message" required></textarea>
+                </div>
+
+                <div>
+                    <button type="submit" onclick="kirimData()">Kirim</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
